@@ -1,0 +1,12 @@
+.dots-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	height: 30px;
+	width: inherit;
+	position: absolute; 
+  bottom: 0;
+	margin-bottom: 10px;
+}

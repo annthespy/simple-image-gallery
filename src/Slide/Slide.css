@@ -1,0 +1,60 @@
+.slide-container {
+  height: inherit;
+  width: inherit;
+  position: relative;
+}
+
+img {
+  height: inherit;
+  width: inherit;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-left {
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  padding-left: 15px;
+}
+
+.arrow-right {
+  right: 0;
+  display: inherit;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  padding-right: 15px;
+  margin-left: auto;
+}
+
+.transition-right {
+  animation: fadeinRight 0.5s ease-in-out;
+}
+
+.transition-left {
+  animation: fadeinLeft 0.5s ease-in-out;
+}
+
+@keyframes fadeinRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
